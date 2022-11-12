@@ -1,0 +1,72 @@
+### USERS #
+
+# Get All Users
+GET http://localhost:5000/users
+
+###
+# Get User By Id
+GET http://localhost:5000/users/2
+
+###
+# Create User
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Ibrahim Rangkuti",
+    "email": "ibrahimrangkuti@gmail.com",
+    "gender": "Male"
+}
+
+###
+# Update User By Id
+PATCH http://localhost:5000/users/1
+Content-Type: application/json
+
+{
+    "name": "Rangkuti",
+    "email": "rangkuti@gmail.com",
+    "gender": "Male"
+}
+
+###
+# Delete User By Id
+DELETE http://localhost:5000/users/1
+
+
+
+### POSTS ###
+
+# Get All Posts
+GET http://localhost:5000/posts
+
+###
+# Get Post By Id
+GET http://localhost:5000/posts/1
+
+###
+# Create Post
+POST http://localhost:5000/posts
+Content-Type: application/json
+
+{
+    "author": "Ibrahim Rangkuti",
+    "title": "Lorem ipsum dolor sit amet",
+    "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+}
+
+###
+# Update Post By Id
+PATCH http://localhost:5000/posts/1
+Content-Type: application/json
+
+{
+    "author": "Rangkuti Ibrahim",
+    "title": "apa kek lah ya",
+    "body": "ya ndak tau kok tanya saya... hehehehheheheheheh"
+}
+
+### 
+# Delete Post By Id
+DELETE http://localhost:5000/posts/1
+
